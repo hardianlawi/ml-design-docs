@@ -61,32 +61,36 @@ Start by providing a big-picture view. [System-context diagrams](https://en.wiki
 
 How will you host your system? On-premise, cloud, or hybrid? This will define the rest of this section
 
-### 6.3. Performance (Throughput, Latency)
+### 6.3. Deployment Process
+
+What's the deployment process to ensure availability & backward compatibility? If we make updates to the model, can the new version be deployed to production without downtime, while the old version is still running?
+
+### 6.4. Performance (Throughput, Latency)
 
 How will your system meet the throughput and latency requirements? Will it scale vertically or horizontally?
 
-### 6.4. Security
+### 6.5. Security
 
 How will your system/application authenticate users and incoming requests? If it's publicly accessible, will it be behind a firewall?
 
-### 6.5. Data privacy
+### 6.6. Data privacy
 
 How will you ensure the privacy of customer data? Will your system be compliant with data retention and deletion policies (e.g., [GDPR](https://gdpr.eu/what-is-gdpr/))?
 
-### 6.6. Monitoring & Alarms
+### 6.7. Monitoring & Alarms
 
 How will you log events in your system? What metrics will you monitor and how? Will you have alarms if a metric breaches a threshold or something else goes wrong?
 
-### 6.7. Cost
+### 6.8. Cost
 How much will it cost to build and operate your system? Share estimated monthly costs (e.g., EC2 instances, Lambda, etc.)
 
-### 6.8. Integration points
+### 6.9. Integration points
 
 How will your system integrate with upstream data and downstream users?
 
-### 6.9. Risks & Uncertainties
+### 6.10. Risks & Uncertainties
 
-Risks are the known unknowns; uncertainties are the unknown unknows. What worries you and you would like others to review?
+Risks are the known unknowns; uncertainties are the unknown unknowns. What worries you and you would like others to review?
 
 ## 7. Appendix
 
