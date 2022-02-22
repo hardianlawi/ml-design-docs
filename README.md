@@ -49,6 +49,10 @@ If you're A/B testing, how will you assign treatment and control (e.g., customer
 
 How will you incorporate human intervention into your ML system (e.g., product/customer exclusion lists)?
 
+### 5.6. Feedback Loop
+
+Does the model need to be retrained to stay fresh? Where and how would this data be generated?
+
 ## 6. Implementation
 
 ### 6.1. High-level design
@@ -65,30 +69,34 @@ How will you host your system? On-premise, cloud, or hybrid? This will define th
 
 What's the deployment process to ensure availability & backward compatibility? If we make updates to the model, can the new version be deployed to production without downtime, while the old version is still running?
 
-### 6.4. Performance (Throughput, Latency)
+### 6.4. Data Logging
+
+Are there any data that need to be collected to retrain the ML model? What data need to be logged?
+
+### 6.5. Performance (Throughput, Latency)
 
 How will your system meet the throughput and latency requirements? Will it scale vertically or horizontally?
 
-### 6.5. Security
+### 6.6. Security
 
 How will your system/application authenticate users and incoming requests? If it's publicly accessible, will it be behind a firewall?
 
-### 6.6. Data privacy
+### 6.7. Data privacy
 
 How will you ensure the privacy of customer data? Will your system be compliant with data retention and deletion policies (e.g., [GDPR](https://gdpr.eu/what-is-gdpr/))?
 
-### 6.7. Monitoring & Alarms
+### 6.8. Monitoring & Alarms
 
 How will you log events in your system? What metrics will you monitor and how? Will you have alarms if a metric breaches a threshold or something else goes wrong?
 
-### 6.8. Cost
+### 6.9. Cost
 How much will it cost to build and operate your system? Share estimated monthly costs (e.g., EC2 instances, Lambda, etc.)
 
-### 6.9. Integration points
+### 6.10. Integration points
 
 How will your system integrate with upstream data and downstream users?
 
-### 6.10. Risks & Uncertainties
+### 6.11. Risks & Uncertainties
 
 Risks are the known unknowns; uncertainties are the unknown unknowns. What worries you and you would like others to review?
 
